@@ -41,11 +41,45 @@
             height: 150px;
         }
     }
+
+    .about-info {
+        grid-template-areas: 
+        'bioimage'
+        'bio'
+        'job1'
+        'job2'
+        'job3';
+
+        grid-template-columns: 1fr;
+    }
 }
 
-// phone
+// phones
 @include mediaSm {
     main#home h1 {
         margin-top: 10vh;
     }
+
+    .menu-btn{
+        right: 20px;
+    }
+
+    h1.lg-heading {
+      font-size: 5rem;  
+    }
 }
+
+// small phones
+@include mediaXS {
+
+    h1.lg-heading {
+      font-size: 4rem;  
+    }
+
+    .about-info {
+        .bio-image {
+            width: 100%;
+        }
+    }
+}
+
