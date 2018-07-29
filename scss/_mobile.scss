@@ -1,5 +1,9 @@
 // widescreens
-@include mediaXL {}
+@include mediaXL {
+    .projects {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
 
 // desktops
 @include mediaLg {}
@@ -52,6 +56,10 @@
 
         grid-template-columns: 1fr;
     }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 // phones
@@ -66,6 +74,10 @@
 
     h1.lg-heading {
       font-size: 5rem;  
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
     }
 }
 
